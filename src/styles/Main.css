@@ -1,0 +1,166 @@
+main {
+  margin-top: 80px;
+  background-color: white;
+  padding: 30px 0;
+  border-radius: 10px;
+  width: 450px;
+  box-shadow: 0 10px 10px rgba(128, 128, 128, 0.174);
+}
+
+.priceBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 0 30px;
+}
+
+.pageviews {
+  font-weight: bold;
+  color: var(--grayish-blue);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+.perMonth {
+  color: var(--grayish-blue);
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  color: black;
+  font-size: 2.2rem; 
+  margin-right: 2px;
+}
+
+.rangeBox {
+  padding: 0 30px;
+}
+
+.range {
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--light-grayish-blue);
+  margin-bottom: 40px;
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: url("../src-from-mentor/images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--strong-cyan);
+  box-shadow: 0 15px 35px -2px hsl(174, 86%, 45%);
+}
+
+.range:active::-webkit-slider-thumb {
+  background-color:hsl(174, 77%, 40%);
+}
+
+.optionsBox {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: var(--grayish-blue);
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.optionsBox>* {
+  margin-right: 15px;
+}
+
+.toggleBox {
+  position: relative;
+  width: 40px;
+  height: 20px;
+
+  border-radius: 10px;
+  background-color: var(--light-grayish-blue-two);
+}
+
+.toggleBox:after {
+  content: "";
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  top: 3px;
+  bottom: 3px;
+  left: 4px;
+  background-color: white;
+  transition: all .3s;
+}
+
+#toggleB:checked + .toggleBox:after {
+  left: 22px;
+}
+
+#toggleB:checked + .toggleBox {
+  background-color: var(--soft-cyan);
+}
+
+#toggleB {
+  display: none;
+}
+
+.discount {
+  font-size: 0.6rem;
+  color: var(--light-red);
+  padding: 2px 6px 2px 6px;
+  background-color: var(--light-grayish-red);
+  border-radius: 10px;
+  margin-top: 0;
+}
+
+hr {
+  border: 1px solid rgba(169, 169, 169, 0.126);
+  margin-bottom: 20px;
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.checkMarksBox>p {
+  color: var(--grayish-blue);
+  font-size: 0.8rem;
+  font-weight: 500;
+ 
+}
+
+.checkMarksBox>p:nth-child(2) {
+  margin: 10px 0;
+}
+
+.checkMarksBox>p:before {
+  content: url("../src-from-mentor/images/icon-check.svg");
+  margin-right: 10px;
+}
+
+.theButton {
+  padding: 10px 44px;
+  background-color: var(--dark-desatureted-blue);
+  border-radius: 20px;
+  color: var(--light-grayish-blue-two);
+  font-weight: bold;
+  font-size: 0.7rem;
+  cursor: pointer;
+  border: none;
+}
+
+.theButton:hover, .theButton:active {
+  color: var(--light-grayish-blue)
+}
